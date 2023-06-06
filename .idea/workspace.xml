@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Update topic 3 and add topic 4">
+      <change afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DD8XgjzQKkNcyaWmiYLA0V1eUK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/t002404/Downloads/Automation learn/selenium-java-testng-dev1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/webdriver" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/browserDrivers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="webdriver" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Topic_06_WebElement_Part2.TC_03_Selected">
+    <configuration name="Topic_06_WebBrowser_Part1.TC_03_Navigate_function" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebBrowser_Part1" />
+      <option name="METHOD_NAME" value="TC_03_Navigate_function" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebBrowser_Part1.TC_04_Get_Page_Source_Code" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebBrowser_Part1" />
+      <option name="METHOD_NAME" value="TC_04_Get_Page_Source_Code" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part2.TC_01_isDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
+      <option name="METHOD_NAME" value="TC_01_isDisplayed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part2.TC_02_Enabled" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
+      <option name="METHOD_NAME" value="TC_02_Enabled" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part2.TC_03_Selected" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
+      <option name="METHOD_NAME" value="TC_03_Selected" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_03_Selected" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_02_Enabled" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_01_isDisplayed" />
+        <item itemvalue="TestNG.Topic_06_WebBrowser_Part1.TC_04_Get_Page_Source_Code" />
+        <item itemvalue="TestNG.Topic_06_WebBrowser_Part1.TC_03_Navigate_function" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="" />
+      <created>1660222337720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660222337720</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update xpath">
+      <created>1660224943303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660224943303</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update xpath">
+      <created>1660224959517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660224959517</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update xpath">
+      <created>1660225876670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660225876670</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update Topic 03 Xpath part 1 and part2">
+      <created>1660659736594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660659736594</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update Topic 03 Xpath part 2 and part 3">
+      <created>1666781712379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666781712379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update topic 3 and add topic 4">
+      <created>1671002341151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671002341151</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update xpath" />
+    <MESSAGE value="Update Topic 03 Xpath part 1 and part2" />
+    <MESSAGE value="Update Topic 03 Xpath part 2 and part 3" />
+    <MESSAGE value="Update topic 3 and add topic 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update topic 3 and add topic 4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
