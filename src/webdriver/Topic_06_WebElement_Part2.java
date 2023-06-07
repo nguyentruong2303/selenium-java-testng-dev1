@@ -197,6 +197,49 @@ public class Topic_06_WebElement_Part2 {
 
 		driver.findElement(By.xpath("//input[@id=\"email\"]")).sendKeys("ken946@gmail.com");
 
+		driver.findElement(newPassword).sendKeys("123");
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"lowercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"uppercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"number-char completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"special-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"8-char not-completed\"]")).isDisplayed());
+
+		driver.findElement(newPassword).clear();
+		sleepInSecond(3);
+		driver.findElement(newPassword).sendKeys("abc");
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"lowercase-char completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"uppercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"number-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"special-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"8-char not-completed\"]")).isDisplayed());
+
+		driver.findElement(newPassword).clear();
+		sleepInSecond(3);
+		driver.findElement(newPassword).sendKeys("ABC");
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"lowercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"uppercase-char completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"number-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"special-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"8-char not-completed\"]")).isDisplayed());
+
+		driver.findElement(newPassword).clear();
+		sleepInSecond(3);
+		driver.findElement(newPassword).sendKeys("&*%");
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"lowercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"uppercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"number-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"special-char completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"8-char not-completed\"]")).isDisplayed());
+
+		driver.findElement(newPassword).clear();
+		sleepInSecond(3);
+		driver.findElement(newPassword).sendKeys("123456789");
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"lowercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"uppercase-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"number-char completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"special-char not-completed\"]")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//li[@class=\"8-char completed\"]")).isDisplayed());
+
 
 	}
 

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Update topic 3 and add topic 4">
-      <change afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" afterDir="false" />
+    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Add topic 6 about WebElement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,43 +72,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_06_WebElement_Part2.TC_03_Selected">
-    <configuration name="Topic_06_WebBrowser_Part1.TC_03_Navigate_function" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebBrowser_Part1" />
-      <option name="METHOD_NAME" value="TC_03_Navigate_function" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_06_WebBrowser_Part1.TC_04_Get_Page_Source_Code" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebBrowser_Part1" />
-      <option name="METHOD_NAME" value="TC_04_Get_Page_Source_Code" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword">
     <configuration name="Topic_06_WebElement_Part2.TC_01_isDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-Java-Testing" />
       <extension name="coverage">
@@ -162,13 +127,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Topic_06_WebElement_Part2.TC_04_Register_function_at_MailChimp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
+      <option name="METHOD_NAME" value="TC_04_Register_function_at_MailChimp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part3" />
+      <option name="METHOD_NAME" value="TC_01_LoginWithEmptyEmailAndPassword" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_04_Register_function_at_MailChimp" />
         <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_03_Selected" />
         <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_02_Enabled" />
         <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_01_isDisplayed" />
-        <item itemvalue="TestNG.Topic_06_WebBrowser_Part1.TC_04_Get_Page_Source_Code" />
-        <item itemvalue="TestNG.Topic_06_WebBrowser_Part1.TC_03_Navigate_function" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671002341151</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add topic 6 about WebElement">
+      <created>1686047599820</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686047599820</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add topic 6 about WebElement">
+      <created>1686047614095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686047614095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +260,8 @@
     <MESSAGE value="Update Topic 03 Xpath part 1 and part2" />
     <MESSAGE value="Update Topic 03 Xpath part 2 and part 3" />
     <MESSAGE value="Update topic 3 and add topic 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update topic 3 and add topic 4" />
+    <MESSAGE value="Add topic 6 about WebElement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add topic 6 about WebElement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
