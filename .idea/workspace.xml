@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Add topic 6 about WebElement">
+    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Add topic 6 about WebElement Part 2 and Part3">
+      <change afterPath="$PROJECT_DIR$/src/javaTester/Topic_05_Random.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webdriver/Topic_07_Textbox_Textarea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Java-Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Java-Testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_00_Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_00_Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_06_WebElement_Part3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -72,80 +76,8 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword">
-    <configuration name="Topic_06_WebElement_Part2.TC_01_isDisplayed" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
-      <option name="METHOD_NAME" value="TC_01_isDisplayed" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_06_WebElement_Part2.TC_02_Enabled" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
-      <option name="METHOD_NAME" value="TC_02_Enabled" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_06_WebElement_Part2.TC_03_Selected" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
-      <option name="METHOD_NAME" value="TC_03_Selected" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_06_WebElement_Part2.TC_04_Register_function_at_MailChimp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part2" />
-      <option name="METHOD_NAME" value="TC_04_Register_function_at_MailChimp" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Topic_07_Textbox_Textarea.TC_01_Create_Account">
+    <configuration name="Topic_06_WebElement_Part3.TC_02_LoginWithInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-Java-Testing" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +87,88 @@
       </extension>
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part3" />
-      <option name="METHOD_NAME" value="TC_01_LoginWithEmptyEmailAndPassword" />
+      <option name="METHOD_NAME" value="TC_02_LoginWithInvalidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part3.TC_03_Login_With_Password_LessThan_6_Characters" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part3" />
+      <option name="METHOD_NAME" value="TC_03_Login_With_Password_LessThan_6_Characters" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_06_WebElement_Part3.TC_04_Login_with_incorrect_Email_Password" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_06_WebElement_Part3" />
+      <option name="METHOD_NAME" value="TC_04_Login_with_incorrect_Email_Password" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_07_Textbox_Textarea" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_07_Textbox_Textarea" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_07_Textbox_Textarea.TC_01_Create_Account" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_07_Textbox_Textarea" />
+      <option name="METHOD_NAME" value="TC_01_Create_Account" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Topic_06_WebElement_Part3.TC_01_LoginWithEmptyEmailAndPassword" />
-        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_04_Register_function_at_MailChimp" />
-        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_03_Selected" />
-        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_02_Enabled" />
-        <item itemvalue="TestNG.Topic_06_WebElement_Part2.TC_01_isDisplayed" />
+        <item itemvalue="TestNG.Topic_07_Textbox_Textarea.TC_01_Create_Account" />
+        <item itemvalue="TestNG.Topic_07_Textbox_Textarea" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part3.TC_04_Login_with_incorrect_Email_Password" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part3.TC_03_Login_With_Password_LessThan_6_Characters" />
+        <item itemvalue="TestNG.Topic_06_WebElement_Part3.TC_02_LoginWithInvalidEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686047614095</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add topic 6 about WebElement Part 2 and Part3">
+      <created>1686146384363</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686146384363</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add topic 6 about WebElement Part 2 and Part3">
+      <created>1686146394541</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686146394541</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add topic 6 about WebElement Part 2 and Part3">
+      <created>1686146438418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686146438418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +295,8 @@
     <MESSAGE value="Update Topic 03 Xpath part 2 and part 3" />
     <MESSAGE value="Update topic 3 and add topic 4" />
     <MESSAGE value="Add topic 6 about WebElement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add topic 6 about WebElement" />
+    <MESSAGE value="Add topic 6 about WebElement Part 2 and Part3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add topic 6 about WebElement Part 2 and Part3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,5 +308,14 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/selenium_java_testng_dev1$Topic_06_WebElement_Part3_TC_04_Login_with_incorrect_Email_Password.ic" NAME="Topic_06_WebElement_Part3.TC_04_Login_with_incorrect_Email_Password Coverage Results" MODIFIED="1686451194574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>webdriver.*</FILTER>
+    </SUITE>
   </component>
 </project>
