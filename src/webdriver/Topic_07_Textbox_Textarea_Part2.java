@@ -12,7 +12,8 @@ import org.testng.annotations.Test;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Topic_07_Textbox_Textarea_Part2 {
+public class
+Topic_07_Textbox_Textarea_Part2 {
 
 	WebDriver driver;
 	Random rand = new Random();
@@ -22,7 +23,7 @@ public class Topic_07_Textbox_Textarea_Part2 {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
+		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver.exe");
 		driver = new FirefoxDriver();
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -36,6 +37,7 @@ public class Topic_07_Textbox_Textarea_Part2 {
 
 		driver.findElement(By.name("username")).sendKeys("Admin");
 		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[text()=\" Login \"]")).click();
 		sleepInSecond(3);
 
 		driver.findElement(By.xpath("//span[text()=\"PIM\"]")).click();
@@ -47,14 +49,14 @@ public class Topic_07_Textbox_Textarea_Part2 {
 		driver.findElement(By.name("firstName")).sendKeys("Automation");
 		driver.findElement(By.name("lastName")).sendKeys("FC");
 		driver.findElement(By.xpath("//label[text()=\"Employee Id\"]/parent::div/following-sibling::div/input")).sendKeys(Keys.chord(Keys.CONTROL,"a"));
-		driver.findElement(By.xpath("//label[text()=\"Employee Id\"]/parent::div/following-sibling::div/input")).clear();
+		driver.findElement(By.xpath("//label[text()=\"Employee Id\"]/parent::div/following-sibling::div/input")).sendKeys(Keys.DELETE);
 		driver.findElement(By.xpath("//label[text()=\"Employee Id\"]/parent::div/following-sibling::div/input")).sendKeys(employeeID);
 		driver.findElement(By.xpath("//p[text()=\"Create Login Details\"]/following-sibling::div//span")).click();
 		driver.findElement(By.xpath("//label[text()=\"Username\"]/parent::div/following-sibling::div/input")).sendKeys("afc" + employeeID);
 		driver.findElement(By.xpath("//label[text()=\"Password\"]/parent::div/following-sibling::div/input")).sendKeys("Password@123");
 		driver.findElement(By.xpath("//label[text()=\"Confirm Password\"]/parent::div/following-sibling::div/input")).sendKeys("Password@123");
 		driver.findElement(By.xpath("//button[text()=\" Save \"]")).click();
-		sleepInSecond(6);
+		sleepInSecond(10);
 
 		Assert.assertEquals(driver.findElement(By.name("firstName")).getAttribute("value"),"Automation");
 		Assert.assertEquals(driver.findElement(By.name("lastName")).getAttribute("value"),"FC");
@@ -69,6 +71,7 @@ public class Topic_07_Textbox_Textarea_Part2 {
 		sleepInSecond(5);
 
 		driver.findElement(By.cssSelector("i.bi-pencil-fill")).click();
+		sleepInSecond(3);
 		Assert.assertEquals(driver.findElement(By.xpath("//label[text()=\"Number\"]/parent::div/following-sibling::div/input")).getAttribute("value"),"4321-123-232");
 		Assert.assertEquals(driver.findElement(By.xpath("//label[text()=\"Comments\"]/parent::div/following-sibling::div/textarea")).getAttribute("value"),commentTextarea);
 		driver.findElement(By.xpath("//p[text()=\"Paul Collings\"]")).click();
@@ -77,6 +80,7 @@ public class Topic_07_Textbox_Textarea_Part2 {
 
 		driver.findElement(By.name("username")).sendKeys("afc" + employeeID);
 		driver.findElement(By.name("password")).sendKeys("Password@123");
+		driver.findElement(By.xpath("//button[text()=\" Login \"]")).click();
 		sleepInSecond(3);
 
 		driver.findElement(By.xpath("//span[text()=\"My Info\"]")).click();
@@ -89,6 +93,7 @@ public class Topic_07_Textbox_Textarea_Part2 {
 		sleepInSecond(2);
 
 		driver.findElement(By.cssSelector("i.bi-pencil-fill")).click();
+		sleepInSecond(3);
 		Assert.assertEquals(driver.findElement(By.xpath("//label[text()=\"Number\"]/parent::div/following-sibling::div/input")).getAttribute("value"),"4321-123-232");
 		Assert.assertEquals(driver.findElement(By.xpath("//label[text()=\"Comments\"]/parent::div/following-sibling::div/textarea")).getAttribute("value"),commentTextarea);
 
