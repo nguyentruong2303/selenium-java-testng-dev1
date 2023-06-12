@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Topic_07_Textbox_Textarea {
+public class Topic_07_Textbox_Textarea_Part1 {
 
 	Random rand;
 
@@ -59,7 +59,7 @@ public class Topic_07_Textbox_Textarea {
 		Assert.assertTrue(contactInformation.contains(fullName));
 		Assert.assertTrue(contactInformation.contains(emailAddress));
 
-		driver.findElement(By.xpath("//a[@class=\"skip-link skip-account skip-active\"]//span[@class=\"icon\"]")).click();
+		driver.findElement(By.xpath("//div[@class=\"account-cart-wrapper\"]//span[text()=\"Account\"]")).click();
 		driver.findElement(By.xpath("//a[@title=\"Log Out\"]")).click();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//img[@src=\"http://live.techpanda.org/media/wysiwyg/test/logo.png\"]")).isDisplayed());
@@ -69,8 +69,22 @@ public class Topic_07_Textbox_Textarea {
 	}
 
 	@Test
-	public void TC_02() {
-	
+	public void TC_02_Login_Account() {
+		driver.get("http://live.techpanda.org/");
+		driver.findElement(By.xpath("//div[@class=\"footer\"]//a[@title=\"My Account\"]")).click();
+		sleepInSecond(3);
+
+		driver.findElement(By.xpath("//input[@id=\"email\"]")).sendKeys(emailAddress);
+		driver.findElement(By.xpath("//input[@id=\"pass\"]")).sendKeys(password);
+
+		driver.findElement(By.xpath("//button[@id=\"send2\"]")).click();
+		sleepInSecond(3);
+
+		String contactInformation = driver.findElement(By.xpath("//h3[text()=\"Contact Information\"]/parent::div[@class=\"box-title\"]/following-sibling::div[@class=\"box-content\"]/p")).getText();
+		System.out.println(contactInformation);
+
+		Assert.assertTrue(contactInformation.contains(fullName));
+		Assert.assertTrue(contactInformation.contains(emailAddress));
 	}
 
 	@Test
