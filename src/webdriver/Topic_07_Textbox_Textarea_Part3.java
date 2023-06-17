@@ -2,6 +2,7 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -16,6 +17,7 @@ public class Topic_07_Textbox_Textarea_Part3 {
 	WebDriver driver;
 	Random rand = new Random();
 	String projectPath = System.getProperty("user.dir");
+	String osName = System.getProperty("os.name");
 
 	String userID = "mngr509396";
 	String password = "UgyqEna";
@@ -23,8 +25,12 @@ public class Topic_07_Textbox_Textarea_Part3 {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-		driver = new FirefoxDriver();
+		if (osName.contains("Mac OS")) {
+			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
+		} else {
+			System.setProperty("webdriver.chrome.driver",projectPath + "/browserDrivers/chromedriver.exe");
+		}
+		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
