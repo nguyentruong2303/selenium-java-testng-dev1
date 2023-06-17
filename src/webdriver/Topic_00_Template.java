@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Topic_00_Template {
@@ -51,6 +52,11 @@ public class Topic_00_Template {
 		} catch (InterruptedException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public int getRandom(int number) {
+		Random rand = new Random();
+	 return	rand.nextInt(9999);
 	}
 
 	@AfterClass
