@@ -53,19 +53,37 @@ public class Topic_08_Default_DropDown {
 
 		driver.findElement(By.cssSelector("a.ico-register")).click();
 
-		//driver.findElement(By.id("gender-male")).click();
-		//driver.findElement(By.id("FirstName")).sendKeys(firstName);
-		//driver.findElement(By.id("LastName")).sendKeys(lastName);
-		//new Select(driver.findElement(By.name("DateOfBirthDay"))).selectByVisibleText(day);
-
-		System.out.println(new Select(driver.findElement(By.name("DateOfBirthDay"))).getOptions());
+		driver.findElement(By.id("gender-male")).click();
+		driver.findElement(By.id("FirstName")).sendKeys(firstName);
+		driver.findElement(By.id("LastName")).sendKeys(lastName);
+		new Select(driver.findElement(By.name("DateOfBirthDay"))).selectByVisibleText(day);
+		new Select(driver.findElement(By.name("DateOfBirthMonth"))).selectByVisibleText(month);
+		new Select(driver.findElement(By.name("DateOfBirthYear"))).selectByVisibleText(year);
+		//System.out.println(new Select(driver.findElement(By.name("DateOfBirthDay"))).getOptions());
 		//Assert.assertEquals(new Select(driver.findElement(By.name("DateOfBirthDay"))).getOptions(),"32");
+		driver.findElement(By.id("Email")).sendKeys(emailName);
+		driver.findElement(By.id("Company")).sendKeys(companyName);
+		driver.findElement(By.id("Password")).sendKeys(password);
+		driver.findElement(By.id("Password")).sendKeys(password);
+		driver.findElement(By.id("register-button")).click();
+
+		Assert.assertEquals(driver.findElement(By.xpath("//div[text()=\"Your registration completed\"]")),"Your registration completed");
+		driver.findElement(By.cssSelector("a.ico-login")).click();
+		driver.findElement(By.id("Email")).sendKeys(emailName);
+		driver.findElement(By.id("Password")).sendKeys(password);
+		driver.findElement(By.xpath("//button[text()=\"Log in\"]")).click();
+
+		driver.findElement(By.cssSelector("a.ico-account")).click();
+		Assert.assertEquals(driver.findElement(By.id("FirstName")).getAttribute("value"),firstName);
+		Assert.assertEquals(driver.findElement(By.id("LastName")).getAttribute("value"),lastName);
+		Assert.assertEquals(new Select(driver.findElement(By.name("DateOfBirthDay"))).getFirstSelectedOption(),day);
+		Assert.assertEquals(new Select(driver.findElement(By.name("DateOfBirthMonth"))).getFirstSelectedOption(),month);
+		Assert.assertEquals(new Select(driver.findElement(By.name("DateOfBirthYear"))).getFirstSelectedOption(),year);
+		Assert.assertEquals(driver.findElement(By.id("Email")).getAttribute("value"),emailName);
+		Assert.assertEquals(driver.findElement(By.id("Company")).getAttribute("value"),companyName);
 
 
-		driver.findElement(By.id("FirstName")).sendKeys();
-		driver.findElement(By.id("FirstName")).sendKeys();
-		driver.findElement(By.id("FirstName")).sendKeys();
-		driver.findElement(By.id("FirstName")).sendKeys();
+
 
 
 
