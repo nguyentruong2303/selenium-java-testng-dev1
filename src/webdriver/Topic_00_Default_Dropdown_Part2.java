@@ -2,6 +2,7 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -9,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -41,6 +43,13 @@ public class Topic_00_Default_Dropdown_Part2 {
 		new Select(driver.findElement(By.id("country"))).selectByVisibleText("Vietnam");
 		Assert.assertEquals(new Select(driver.findElement(By.id("country"))).getFirstSelectedOption().getText(),"Vietnam");
 		driver.findElement(By.cssSelector("button.btn-default")).click();
+
+		List<WebElement> distributorItem = driver.findElements(By.cssSelector("h4.text-left i"));
+
+		for (WebElement item : distributorItem) {
+			String itemText = item.getText();
+			System.out.println(itemText);
+		}
 
 		//driver.findElements(By.cssSelector("h4.text-left")).
 
