@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Topic_08_Default_DropDown {
+public class Topic_08_Default_DropDown_Part1 {
 
 	WebDriver driver;
 
@@ -54,7 +54,7 @@ public class Topic_08_Default_DropDown {
 	}
 
 	@Test
-	public void TC_01() {
+	public void TC_01_Register() {
 		driver.get("https://demo.nopcommerce.com/");
 
 		driver.findElement(By.cssSelector("a.ico-register")).click();
