@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Update Template And Add Topic 8 Default Dropdown">
+    <list default="true" id="7df9f4d3-39bf-46e7-b041-84f7351ca3dd" name="Changes" comment="Update Topic 6 and Add Topic 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webdriver/Topic_08_Default_DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webdriver/Topic_08_Default_DropDown.java" afterDir="false" />
     </list>
@@ -76,7 +76,7 @@
       <recent name="webdriver" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Topic_07_Textbox_Textarea_Part3.TC_01_New_Customer">
+  <component name="RunManager" selected="TestNG.Topic_08_Default_DropDown">
     <configuration name="Topic_07_Textbox_Textarea_Part1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-Java-Testing" />
       <extension name="coverage">
@@ -88,42 +88,6 @@
       <option name="PACKAGE_NAME" value="webdriver" />
       <option name="MAIN_CLASS_NAME" value="webdriver.Topic_07_Textbox_Textarea_Part1" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_07_Textbox_Textarea_Part1.TC_01_Create_Account" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_07_Textbox_Textarea_Part1" />
-      <option name="METHOD_NAME" value="TC_01_Create_Account" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Topic_07_Textbox_Textarea_Part1.TC_02_Login_Account" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-Java-Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webdriver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webdriver" />
-      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_07_Textbox_Textarea_Part1" />
-      <option name="METHOD_NAME" value="TC_02_Login_Account" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -166,13 +130,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Topic_08_Default_DropDown" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_08_Default_DropDown" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Topic_08_Default_DropDown.TC_01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-Java-Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webdriver" />
+      <option name="MAIN_CLASS_NAME" value="webdriver.Topic_08_Default_DropDown" />
+      <option name="METHOD_NAME" value="TC_01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Topic_08_Default_DropDown" />
+        <item itemvalue="TestNG.Topic_08_Default_DropDown.TC_01" />
         <item itemvalue="TestNG.Topic_07_Textbox_Textarea_Part3.TC_01_New_Customer" />
         <item itemvalue="TestNG.Topic_07_Textbox_Textarea_Part2.TC_01_Create_Employee" />
         <item itemvalue="TestNG.Topic_07_Textbox_Textarea_Part1" />
-        <item itemvalue="TestNG.Topic_07_Textbox_Textarea_Part1.TC_02_Login_Account" />
-        <item itemvalue="TestNG.Topic_07_Textbox_Textarea_Part1.TC_01_Create_Account" />
       </list>
     </recent_temporary>
   </component>
@@ -279,21 +278,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686473207424</updated>
     </task>
-    <task id="LOCAL-00014" summary="Update Add Topic 7 part3">
-      <created>1686998876941</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1686998876941</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update Template And Add Topic 8 Default Dropdown">
-      <created>1687001127834</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1687001127834</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,8 +302,7 @@
     <MESSAGE value="Add topic 6 about WebElement Part 2 and Part3" />
     <MESSAGE value="Add function Random and update template" />
     <MESSAGE value="Update Topic 6 and Add Topic 7" />
-    <MESSAGE value="Update Template And Add Topic 8 Default Dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Template And Add Topic 8 Default Dropdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Topic 6 and Add Topic 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
