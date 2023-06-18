@@ -37,9 +37,9 @@ public class Topic_08_Default_DropDown {
 
 		firstName = "Simon";
 		lastName = "Ken";
-		day = "23";
+		day = "3";
 		month = "3";
-		year = "1997";
+		year = "2000";
 		emailName = "Simon" + rand.nextInt(9999) + "@gmail.com";
 		companyName = "Automation Fc";
 		password = "12345678";
@@ -81,6 +81,7 @@ public class Topic_08_Default_DropDown {
 		Assert.assertEquals(new Select(driver.findElement(By.name("DateOfBirthYear"))).getFirstSelectedOption(),year);
 		Assert.assertEquals(driver.findElement(By.id("Email")).getAttribute("value"),emailName);
 		Assert.assertEquals(driver.findElement(By.id("Company")).getAttribute("value"),companyName);
+
 
 
 
