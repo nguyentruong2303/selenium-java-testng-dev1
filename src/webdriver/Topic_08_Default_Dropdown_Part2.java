@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class Topic_00_Default_Dropdown_Part2 {
+public class Topic_08_Default_Dropdown_Part2 {
 
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
