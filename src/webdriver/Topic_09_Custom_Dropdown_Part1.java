@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -41,26 +42,19 @@ public class Topic_09_Custom_Dropdown_Part1 {
 	public void TC_01() {
 		driver.get("https://jqueryui.com/resources/demos/selectmenu/default.html");
 
-		//Step1 : Click vào 1 thẻ bất kì làm sao cho dropdown xổ ra tất cả item
-		driver.findElement(By.id("speed-button")).click();
-		//Step2: Chờ cho tất cả các item được load thành công
-		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("ul#speed-menu div[role=\"option\"]")));
-		//Step3: Tìm item xem đúng cái đang cần chọn hay ko
+		selectItemDropDown("speed-button","ul#speed-menu div[role=\"option\"]","Faster");
+		sleepInSecond(2);
+		Assert.assertEquals(driver.findElement(By.cssSelector("span#speed-button span.ui-selectmenu-text")).getText(),"Faster");
 
-		List<WebElement> speedDropdownItems = driver.findElements(By.cssSelector("ul#speed-menu div[role=\"option\"]"));
-		// Step 3-1: Nếu item ko nằm trong khoảng nhìn thấy phải dùng
-		// Step 3-2: Nếu item nằm trong khoảng nhìn thấy, user ko cần scroll
-		for (WebElement items: speedDropdownItems) {
-			String itemName = items.getText();
+		selectItemDropDown("speed-button","ul#speed-menu div[role=\"option\"]","Slow");
+		sleepInSecond(2);
+		Assert.assertEquals(driver.findElement(By.cssSelector("span#speed-button span.ui-selectmenu-text")).getText(),"Slow");
 
-			//Step4: Kiểm tra cái text của item đúng với cái mình chọn
-			if (itemName.equals("Faster")) {
+		selectItemDropDown("speed-button","ul#speed-menu div[role=\"option\"]","Fast");
+		sleepInSecond(2);
+		Assert.assertEquals(driver.findElement(By.cssSelector("span#speed-button span.ui-selectmenu-text")).getText(),"Fast");
 
-				//Step5: Click chọn item
-				items.click();
-				break;
-			}
-		}
+
 
 	}
 
@@ -72,6 +66,30 @@ public class Topic_09_Custom_Dropdown_Part1 {
 	@Test
 	public void TC_03() {
 		
+	}
+
+	public void selectItemDropDown(String parentCss,String itemCss, String expectedItem) {
+
+		//Step1 : Click vào 1 thẻ bất kì làm sao cho dropdown xổ ra tất cả item
+		driver.findElement(By.id(parentCss)).click();
+		//Step2: Chờ cho tất cả các item được load thành công
+		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(itemCss)));
+		//Step3: Tìm item xem đúng cái đang cần chọn hay ko
+
+		List<WebElement> speedDropdownItems = driver.findElements(By.cssSelector(itemCss));
+		// Step 3-1: Nếu item ko nằm trong khoảng nhìn thấy phải dùng
+		// Step 3-2: Nếu item nằm trong khoảng nhìn thấy, user ko cần scroll
+		for (WebElement items: speedDropdownItems) {
+			String itemName = items.getText();
+
+			//Step4: Kiểm tra cái text của item đúng với cái mình chọn
+			if (itemName.equals(expectedItem)) {
+
+				//Step5: Click chọn item
+				items.click();
+				break;
+			}
+		}
 	}
 
 	public void sleepInSecond(long timeInSecond) {
