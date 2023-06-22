@@ -37,12 +37,18 @@ public class Topic_10_Button_Radio_Checkbox {
 		driver.get("https://www.fahasa.com/customer/account/create");
 
 		driver.findElement(By.cssSelector("li.popup-login-tab-login")).click();
-
 		Assert.assertFalse(driver.findElement(By.cssSelector("button.fhs-btn-register")).isEnabled());
-
 		String btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-image");
-
 		System.out.println(btnColor);
+
+		driver.findElement(By.id("login_username")).sendKeys("automationfc@gmail.com");
+		driver.findElement(By.id("login_password")).sendKeys("12345678");
+		Assert.assertTrue(driver.findElement(By.cssSelector("button.fhs-btn-register")).isEnabled());
+		btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-color");
+		System.out.println(btnColor);
+
+
+
 
 	}
 
