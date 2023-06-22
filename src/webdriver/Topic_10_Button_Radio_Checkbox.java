@@ -3,6 +3,7 @@ package webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,9 +34,15 @@ public class Topic_10_Button_Radio_Checkbox {
 
 	@Test
 	public void TC_01() {
-		driver.get("https://www.facebook.com/");
+		driver.get("https://www.fahasa.com/customer/account/create");
 
-		//driver.findElement(By.cssSelector()).isEnabled()
+		driver.findElement(By.cssSelector("li.popup-login-tab-login")).click();
+
+		Assert.assertFalse(driver.findElement(By.cssSelector("button.fhs-btn-register")).isEnabled());
+
+		String btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-image");
+
+		System.out.println(btnColor);
 
 	}
 
