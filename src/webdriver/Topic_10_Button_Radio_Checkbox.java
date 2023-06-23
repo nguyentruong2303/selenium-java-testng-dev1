@@ -2,7 +2,9 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -22,10 +24,10 @@ public class Topic_10_Button_Radio_Checkbox {
 		if (osName.contains("Mac OS")) {
 			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		} else {
-			System.setProperty("webdriver.gecko.driver",projectPath + "/browserDrivers/geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver",projectPath + "/browserDrivers/chromedriver.exe");
 		}
 
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -36,18 +38,27 @@ public class Topic_10_Button_Radio_Checkbox {
 	public void TC_01() {
 		driver.get("https://www.fahasa.com/customer/account/create");
 
+		By loginButton = By.cssSelector("button.fhs-btn-register");
+
 		driver.findElement(By.cssSelector("li.popup-login-tab-login")).click();
-		Assert.assertFalse(driver.findElement(By.cssSelector("button.fhs-btn-register")).isEnabled());
-		String btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-image");
-		System.out.println(btnColor);
 
-		driver.findElement(By.id("login_username")).sendKeys("automationfc@gmail.com");
+//		Assert.assertFalse(driver.findElement(loginButton).isEnabled());
+//		String btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-image");
+//		System.out.println(btnColor);
+
+		driver.findElement(By.id("login_username")).sendKeys("0987123431");
 		driver.findElement(By.id("login_password")).sendKeys("12345678");
-		Assert.assertTrue(driver.findElement(By.cssSelector("button.fhs-btn-register")).isEnabled());
-		btnColor = driver.findElement(By.cssSelector("button.fhs-btn-register")).getCssValue("background-color");
+		sleepInSecond(3);
+
+		Assert.assertFalse(driver.findElement(loginButton).isEnabled());
+		String btnColor = driver.findElement(loginButton).getCssValue("background-color");
 		System.out.println(btnColor);
 
 
+		Color loginButtonBackgroundColor = Color.fromString(btnColor);
+		System.out.println(loginButtonBackgroundColor.asHex());
+
+		Assert.assertEquals(loginButtonBackgroundColor.asHex().toUpperCase(),"#000000");
 
 
 	}
