@@ -128,6 +128,38 @@ public class Topic_10_Button_Radio_Checkbox {
 
 	}
 
+	@Test
+	public void TC_04_Default_Checkbox_Radio_Button() {
+
+		driver.get("https://material.angular.io/components/radio/examples");
+
+		By radioItem = By.xpath("//label[contains(text(),\"Summer\")]/preceding-sibling::div//input");
+
+		driver.findElement(radioItem).click();
+		Assert.assertTrue(driver.findElement(radioItem).isSelected());
+
+		selectCheckBox(radioItem);
+
+		driver.get("https://material.angular.io/components/checkbox/examples");
+		By checkboxItem1 = By.xpath("//label[text()=\"Checked\"]/preceding-sibling::div//input");
+		By checkboxItem2 = By.xpath("//label[text()=\"Indeterminate\"]/preceding-sibling::div//input");
+
+		driver.findElement(checkboxItem1).click();
+		driver.findElement(checkboxItem2).click();
+
+		Assert.assertTrue(driver.findElement(checkboxItem1).isSelected());
+		Assert.assertTrue(driver.findElement(checkboxItem2).isSelected());
+
+		removeCheckBox(checkboxItem1);
+		removeCheckBox(checkboxItem2);
+
+		Assert.assertFalse(driver.findElement(checkboxItem1).isSelected());
+		Assert.assertFalse(driver.findElement(checkboxItem2).isSelected());
+
+	}
+
+
+
 	public void selectCheckBox(By by) {
 		if (!driver.findElement(by).isSelected()){
 			driver.findElement(by).click();
